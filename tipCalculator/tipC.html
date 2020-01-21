@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>TipCalculator</title>
+    <link rel="stylesheet" href="tipC.css">
+</head>
+<body>
+    <div id="container">
+        <h3>TIP CALCULATOR</h3>
+        <form>
+            How much was your bill?<br>
+            $ <input id="bill" type="text" autocomplete="off" autofocus maxlength="15" 
+            placeholder="Bill Amount" value="">
+            <p id="afterbill"></p>
+            How was your service?<br>
+            <select name="serviceQuality" id="serQual">
+                <option disabled selected value="">-- Choose an Option --</option>
+                <option value="30">30% - Outstanding</option>
+                <option value="20">20% - Good</option>
+                <option value="15">15% - It was Ok</option>
+                <option value="10">10% - Bad</option>
+                <option value="5">5% - Terrible</option>
+            </select>
+            <p id="afterselect"></p>
+            How many people are sharing the tip?<br>
+            <input id="people" type="text" autocomplete="off" maxlength="15" 
+            placeholder="Number of People" value="">people
+            <p id="afterpeople"></p>
+            <div id="calculate">CALCULATE!</div>
+            <div id="result">
+                <h4 id="h4" class="general h4"></h4>
+                <p id="amount" class="general amount"></p>
+                <p id="each" class="general each"></p>
+            </div>
+        </form>
+    </div>
+    <script src="tipC.js"></script>
+</body>
+</html>

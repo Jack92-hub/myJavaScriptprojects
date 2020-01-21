@@ -1,0 +1,83 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    font-family: Roboto;
+    background-color: #8E0E00;
+    background: linear-gradient(to left, #8E0E00, #1F1C18 );
+}
+#container {
+    background-color: white;
+    width: 350px;
+    height: 530px;
+    margin: auto;
+    margin-top: 30px;
+    border: 1px solid gray;
+    border-radius: 20px;
+    box-shadow: 3px 3px 5px gray;
+}
+h3 {
+    margin: 0px;
+    padding: 10px;
+    background-color: #1F1C18;
+    color: #fff;
+    text-align: center;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+form {
+    margin: 20px;
+}
+input, select {
+    margin: 10px 0;
+    margin-bottom: 3px;
+    margin-right: 10px;
+}
+input {
+    background-color: rgb(245, 237, 237);
+    width: 220px;
+    height: 30px;
+    font-size: 18px;
+}
+input[autofocus] {
+    background-color: rgb(234, 240, 243);
+}
+select {
+    width: 280px;
+    height: 50px;
+    font-size: 25px;
+}
+#calculate {
+    margin: auto;
+    border: 1px solid red;
+    border-radius: 5px;
+    text-align: center;
+    font-weight: bold;
+    padding: 10px;
+    background-color: rgb(228, 73, 73);
+    width: 200px;
+    height: 40px;
+    box-shadow: 3px 3px 3px gray;
+}
+#result {
+    margin: auto;
+    margin-top: 10px;
+    font-size: 20px;
+    text-align: center;
+    font-weight: bold;
+    padding: 10px;
+    width: 200px;
+    height: 40px;
+}
+.amount {
+    font-size: 30px;
+}
+p {
+    margin: 0;
+    margin-bottom: 10px;
+    color: darkred;
+}
+.general {
+    margin: 5px;
+    color: black;
+}
