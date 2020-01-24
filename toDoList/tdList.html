@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="tdList.css">
+    <link rel="stylesheet" href="fontawesome-free-5.12.0-web/css/all.css">
+    <title>To Do List</title>
+</head>
+<body>
+    <div id="container" class="container">
+        <h1>Work to-dos</h1>
+        <p class="first">Enter text into the input field to add items to your list.</p>
+        <p class="second">Click the item to mark it as complete.</p>
+        <p class="third">Click the "X" to remove the item from your list.</p>
+        <input id="input" type="text" autocomplete="off" maxlength="50"
+         autofocus placeholder=" New item...">
+        <button id="enter"><i class="fas fa-pencil-alt"></i></button>
+        <ul id="ul"></ul>
+    </div>
+    <script src="tdList.js"></script>
+</body>
+</html>
