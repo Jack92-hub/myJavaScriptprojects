@@ -1,0 +1,172 @@
+* {
+    box-sizing: border-box;
+}
+.keyframes {
+    border: 1px solid black;
+    width: 100px;
+    height: 100px;
+    background-color: yellow;
+    position: relative;
+    animation-name: example;
+    animation-duration: 4s;
+    animation-delay: 1s;
+    animation-iteration-count: 2;/*can be 'infinite'*/
+    animation-direction: forwards;
+    animation-timing-function: ease-in;
+    animation-fill-mode: forwards;
+}
+@keyframes example {
+    0% {background-color: yellow; left: 0px; top: 0px;}
+    25% {background-color: red; left: 200px; top: 0px;}
+    50% {background-color: blue; left: 200px; top: 200px;}
+    75% {background-color: green; left: 0px; top: 200px;}
+    100% {background-color: yellow; left: 0px; top: 0px;}
+}
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px solid black;    
+}
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: white;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0px;
+    position: absolute;
+    z-index: 1;
+    top: -5px;
+    left: 105%; /*to the right of text*/
+    opacity: 0;
+    transition: opacity 1s;
+}
+.tooltip .tooltiptext::after {
+    content: " ";
+    position: absolute;
+    top: 50%;
+    right: 100%; /* To the left of the tooltip */
+    margin-top: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent black transparent transparent;
+  }
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+}
+.image {
+    border-radius: 50%;
+}
+.image2 {
+    max-width: 100%;/* to be responsive*/
+    width: 700px;
+    height: 300px;
+    border: 1px solid lightblue;
+    padding: 5px;
+    border-radius: 4px;
+    margin-right: auto; /*to make center*(margin and dispaly)*/
+    margin-left: auto;
+    display: block;
+    filter: grayscale(100%);
+    object-fit: cover;/*fill(default), contain, none, scale-down*/
+}
+.image:hover {
+    box-shadow: 2px 2px 3px 4px rgba(0, 140, 186, 0.5);
+}
+.image2:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.button {
+    display: inline-block;
+    padding: 15px 25px;
+    font-size: 24px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #995;
+    margin-bottom: 40px;
+  }
+  
+  .button:hover {background-color: #3e8e41}
+  
+  .button:active {
+    background-color: #3e8e41;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+  }
+  .center {
+      text-align: center;
+      margin-bottom: 20px;
+  }
+  .pagination {
+      display: inline-block;
+  }
+  .pagination a {
+      font-size: 18px;
+      float: left;
+      text-decoration: none;
+      padding: 8px 16px;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      margin: 0px 3px; 
+      transition: background-color 0.3s;
+  }
+  .pagination a.active {
+      background-color: green;
+      border-radius: 8px;
+  }
+  .pagination a:hover:not(.active) {
+      background-color: lightslategray;
+      color: white;
+      border-radius: 8px;
+  }
+  .column {
+      margin-bottom: 20px;
+      column-count: 3;
+      column-gap: 30px;
+      column-rule: 1px solid gray;
+      column-width: 100px;
+  }
+  .column h2 {
+      column-span: all;
+  }
+  :root/*or body */{
+      --main-color: #f00;/*variable*/
+      --main-padding: 14px 16px;
+  }
+  .resize {
+      width: 300px;
+      border: 2px solid var(--main-color);
+      padding: var(--main-padding);
+      resize: both;
+      overflow: auto;
+      outline: 1px dashed #3e8e41;
+      outline-offset: 6px;
+  }
+  .flex-container {
+      display: flex;
+      background-color: aqua;
+      flex-direction: row;/*column-reverse(from bottom to top),column,row-reverse*/
+      flex-wrap: wrap;
+      flex-flow: row wrap; /*shorthand for flex-direction and flex-wrap*/
+      justify-content: center;
+      height: 400px;
+      align-items: center;
+      align-content: space-around       ;
+  }
+  .flex-container > div {
+      background-color: aliceblue;
+      margin: 10px;
+      padding: 20px;
+      font-size: 30px;
+      width: 100px;
+      text-align: center;
+      line-height: 30px;
+  }

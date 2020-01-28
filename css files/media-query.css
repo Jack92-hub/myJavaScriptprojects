@@ -1,0 +1,32 @@
+* {
+    box-sizing: border-box;
+}
+.wrapper {
+    display: flex;
+    flex-wrap: wrap;
+}
+.leftsidebar {
+    flex: 25%;
+    padding: 25px;
+}
+.main {
+    flex: 75%;
+    padding: 25px;
+}
+.menulist {
+    margin: 0;
+    padding: 0;
+}
+.menu-item {
+    list-style-type: none;
+    background-color: gray;
+    color: white;
+    border: 1px solid black;
+    border-radius: 4px;
+    margin: 3px;
+    padding: 2px;
+}
+@media screen and (max-width: 600px) {
+    .wrapper {flex-direction: column;}
+    .main {padding: 5px;}
+}

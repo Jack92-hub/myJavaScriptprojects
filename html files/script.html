@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <h2>JavaScript Variables</h2>
+
+    <p>Strings are written with quotes.</p>
+    <p>Numbers are written without quotes.</p>
+    <p id="demo"></p>
+    <p id="id"></p>
+    <p id="function"></p>
+    <p id="object"></p>
+    <p id="length"></p>
+    <p id="string_object"></p>
+    <script>
+        var pi = 3.14;
+        var txt = "my name is Javlon";
+        var a = 5;
+        var decimal = 10.5;
+        var b = "Javlon";
+        var answer = "Yes, "+
+         "\'this\' is me";
+        var c = new String("Javlon");
+        document.getElementById("string_object").innerHTML = 
+        typeof b + " " + typeof c + " " + (b==c)+ " " + (b===c)// however two objects cannot be compared( says always false)
+        var add = pi + decimal;
+        var person = {
+            firstName: "Javlon",
+            lastName: "Umrzokov",
+            age: 27,
+            gender: "male",
+            fullName: function () {
+                return this.firstName + " " + this.lastName
+            }
+        };
+        add += 1;
+        document.getElementById("demo").innerHTML =
+            pi + "<br>" + person + "<br>" + answer + "<br>" + decimal + "<br>" + add; // just to test comment
+        document.getElementById("id").innerHTML = Math.pow(a, 3);
+
+        function myFunction(p1, p2) {
+            return p1 * p2;
+        }
+        document.getElementById("function").innerHTML = myFunction(5, 2);
+        document.getElementById("length").innerHTML = txt.length;
+        document.getElementById("object").innerHTML = person.fullName() + " is " + person["age"] + " years old.";
+    </script>
+    <button onclick="document.getElementById('event').innerHTML = Date()">Current Time</button>
+    <p id="event"></p>
+    <div onmouseover="this.style.backgroundColor='red'">myDIV.</div>
+    
+
+</body>
+
+</html>

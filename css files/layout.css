@@ -1,0 +1,109 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	background-color: rgb(217, 230, 241)
+}
+
+/*style the header*/
+.header {
+	background-color: rgb(255, 255, 255);
+	padding: 20px;
+	text-align: center;
+	margin: 20px;
+	margin-bottom: 0px;
+}
+
+.footer {
+	clear: left;
+	background-color: rgb(185, 184, 184);
+	padding: 20px;
+	text-align: center;
+	margin: 20px;
+	margin-top: 0px;
+}
+
+.topnav {
+	overflow: hidden;
+	background-color: rgb(51, 50, 50);
+	margin: 20px;
+	margin-top: 0px;
+}
+
+.topnav a {
+	display: inline-block;
+	padding: 14px 16px;
+	color: rgb(255, 255, 255);
+	text-decoration: none;
+	text-align: center;
+}
+
+.topnav a:hover {
+	background-color: lightblue;
+	color: #000;
+}
+
+.row {
+	margin: 20px;
+}
+
+.left_column {
+	width: 75%;
+	float: left;
+}
+
+.right_column {
+	width: 25%;
+	float: left;
+}
+
+.content {
+	margin-right: 20px;
+	margin-bottom: 20px;
+	background-color: rgb(255, 255, 255);
+	padding: 20px;
+}
+
+.sidecontent {
+	margin-bottom: 20px;
+	background-color: rgb(255, 255, 255);
+	padding: 20px;
+}
+
+.image {
+	background-color: rgb(168, 166, 163);
+	height: 300px;
+}
+
+div.image p {
+	padding-top: 25px;
+	padding-left: 25px;
+}
+
+.rightimage {
+	background-color: rgb(168, 166, 163);
+	height: 150px;
+}
+
+.rightimage p {
+	padding-top: 25px;
+	padding-left: 25px;
+}
+
+@media screen and (max-width: 800px) {
+
+	.left_column,
+	.right_column {
+		width: 100%;
+		padding: 0;
+	}
+}
+
+@media screen and (max-width: 400px) {
+	.topnav a {
+		float: none;
+		width: 100%;
+	}
+}

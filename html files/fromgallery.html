@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>from Image Gallery</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="..\css files\fromgallery.css">
+	<style>
+		#id {
+			color: red;
+		}
+	</style>
+</head>
+
+<body>
+	<h1>Image gallery</h1>
+	<div class="gallery">
+		<a href="#">
+			<img src="..\images\nature1.jpg" alt="nature1" width="600" height="400">
+		</a>
+		<div class="desc">Add description here</div>
+	</div>
+
+	<div class="gallery">
+		<a href="#">
+			<img src="..\images\nature2.jpg" alt="nature2" width="600" height="400">
+		</a>
+		<div class="desc">Add description here</div>
+	</div>
+	<div class="gallery">
+		<a href="#">
+			<img src="..\images\nature3.jpg" alt="nature3" width="600" height="400">
+		</a>
+		<div class="desc">Add description here</div>
+	</div>
+	<div class="gallery">
+		<a href="#">
+			<img src="..\images\nature4.jpg" alt="nature4" width="600" height="400">
+		</a>
+		<div class="desc">Add description here</div>
+	</div>
+	<p style="clear: left;">The link with target="_blank" gets a yellow background:</p>
+
+	<a href="https://www.w3schools.com">w3schools.com</a>
+	<a href="http://www.disney.com" target="_blank">disney.com</a>
+	<a href="http://www.wikipedia.org" target="_top">wikipedia.org</a><br>
+
+	<div class="form">
+		<form>
+			<label for="fname">First Name</label>
+			<input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+			<label for="lname">Last Name</label>
+			<input type="text" id="lname" name="lastname" placeholder="Your lastname..">
+
+			<label for="country">Country</label>
+			<select id="country" name="country">
+				<option value="Uzbekistan">Uzbekistan</option>
+				<option value="USA">USA</option>
+				<option value="South Korea">South Korea</option>
+			</select>
+			<input type="submit" value="Submit">
+		</form>
+	</div><br>
+	<div class="section">
+		<h1>HTML tutorials:</h1>
+		<p>HTML Tutorial</p>
+		<p>CSS Tutorial</p>
+
+		<h1>Scripting tutorials:</h1>
+		<p>JavaScript</p>
+		<p>VBScript</p>
+
+		<h1>XML tutorials:</h1>
+		<p>XML</p>
+		<p>XSL</p>
+	</div>
+	<br>
+	<h1 id="id">Title</h1>
+</body>
+
+</html>

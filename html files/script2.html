@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Script Practice</title>
+</head>
+<body>
+    <h1>Finding a string in a string</h1>
+    <p id="indexOf"></p>
+    <p id="lastIndexOf"></p>
+    <p id="slice"></p>
+    <p>Replace "Microsoft" with "W3Schools" in the paragraph below:</p>
+    <button onclick="replaceFunction()">Try it</button>
+    <p id="replace">Please visit Microsoft!</p>
+
+    <button onclick="upperFunction()">Try it</button>
+    <p id="upper">Please visit Microsoft!</p>
+    <p id="concat"></p>
+    <p id="charAt"></p>
+    <p id="charCodeAt"></p>
+    <p id="property_acces"></p>
+    <p id="arr"></p>
+    <p id="arrFruits"></p>
+    <p id="joinMethod"></p>
+    <p id="popMethod"></p>
+    <p id="pushMethod"></p>
+    <p id="spliceMethod"></p>
+    <p id="concatarr">
+    <script>
+        var str = "Please locate where 'locate' occurs!";
+        var pos = str.indexOf("locate");
+        var pos2 = str.lastIndexOf("locate");
+        document.getElementById("indexOf").innerHTML = pos;//both index of returns -1 if string isnt found
+        document.getElementById("lastIndexOf").innerHTML = pos2;
+        var stri = "Apple, Banana, Kiwi";
+        var slc = stri. slice(7, 13);//same as stri.slice(-12,-6) another one similar : substring(number, number(no negative numbers)) and sub
+        document.getElementById("slice").innerHTML = slc;//another one substr(number, length)
+        
+        function replaceFunction() {
+            var rep = document.getElementById("replace").innerHTML;
+            var repWord = rep.replace("Microsoft", "W3schools");
+            document.getElementById("replace").innerHTML = repWord;
+        }
+        function upperFunction() {
+            var upper = document.getElementById("upper").innerHTML;
+            document.getElementById("upper").innerHTML = upper.toUpperCase();//toLowerCase is similar way
+        }
+        var concatinated = str.concat(" ", stri);
+        document.getElementById("concat").innerHTML = concatinated;
+        document.getElementById("charAt").innerHTML = str.charAt(3);
+        document.getElementById("charCodeAt").innerHTML = str.charCodeAt(3);
+        document.getElementById("property_acces").innerHTML = str[0];
+        var arr = str.split("");
+        document.getElementById("arr").innerHTML = arr;
+        
+        var fruits = ["Orange", "Apple", "Banana", "Mango"];
+        document.getElementById("arrFruits").innerHTML = fruits.toString();
+        document.getElementById("joinMethod").innerHTML = fruits.join(", ");
+        fruits.pop();
+        document.getElementById("popMethod").innerHTML = fruits;
+        fruits.push("Kiwi");
+        document.getElementById("pushMethod").innerHTML = fruits;
+        fruits.splice(2 /*index of array*/, 1 /*number of element to be deleted*/, "Lemon", "Grape");
+        document.getElementById("spliceMethod").innerHTML = fruits;
+        var arr1 = ["Javlon"];
+        var arr2 = ["Danny"];
+        var arr3 = ["Jamshid"];
+        var concatarr = arr1.concat(arr2, arr3);
+        document.getElementById("concatarr").innerHTML = concatarr;
+
+
+    </script>
+</body>
+</html>

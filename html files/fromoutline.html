@@ -1,0 +1,239 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <style>
+    #page1 {
+      border: 2px solid black;
+      outline: #4CAF50 solid 10px;
+      outline-offset: 15px;
+      /*outline has the same properties and values as border except outline-offset*/
+      margin: 30px;
+      padding: 20px;
+      text-align: center;
+    }
+
+    div.different {
+      border: 1px solid gray;
+      padding: 8px;
+    }
+
+    h1 {
+      text-align: center;
+      text-transform: uppercase;
+      color: #4CAF50;
+    }
+
+    #page2 {
+      text-indent: 50px;
+      text-align: justify;
+      letter-spacing: 3px;
+    }
+
+    a.link1 {
+      text-decoration: none;
+      color: #008CBA;
+    }
+
+    p.page3 {
+      line-height: 1.2;
+      direction: rtl;
+      word-spacing: 8px;
+      text-shadow: 3px
+        /*horizontal*/
+        2px
+        /*vertical( both 
+  position must be given to be displayed*/
+        green;
+    }
+
+    /* unvisited link */
+    a.linkstyle:link {
+      color: red;
+      text-decoration: none;
+      background-color: yellow;
+      padding: 14px 20px;
+      text-align: center;
+      display: inline-block;
+    }
+
+    /* visited link */
+    a.linkstyle:visited {
+      color: green;
+      text-decoration: none;
+      background-color: lightblue;
+      padding: 14px 20px;
+      text-align: center;
+      display: inline-block;
+    }
+
+    /* mouse over link */
+    a.linkstyle:hover {
+      color: hotpink;
+      text-decoration: underline;
+      background-color: green;
+      padding: 14px 20px;
+      text-align: center;
+      display: inline-block;
+    }
+
+    /* selected link */
+    a.linkstyle:active {
+      color: blue;
+      text-decoration: underline;
+      background-color: pink;
+      padding: 14px 20px;
+      text-align: center;
+      display: inline-block;
+    }
+
+    #customers {
+      font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+      border-collapse: collapse;
+      width: 80%;
+    }
+
+    #customers td,
+    #customers th {
+      border: 1px solid #ddd;
+      padding: 8px;
+    }
+
+    #customers tr:nth-child(even) {
+      background-color: #f2f2f2;
+    }
+
+    #customers tr:hover {
+      background-color: #ddd;
+    }
+
+    #customers th {
+      padding-top: 12px;
+      padding-bottom: 12px;
+      text-align: left;
+      /*horizontal align*/
+      /*vertical-align: bottom(top);*/
+      background-color: #4CAF50;
+      color: white;
+    }
+
+    div.ex1 {
+      width: 500px;
+      margin: auto;
+      border: 3px solid #73AD21;
+    }
+
+    div.ex2 {
+      max-width: 500px;
+      margin: auto;
+      border: 3px solid #73AD21;
+    }
+
+    li {
+      display: inline;
+      /*(:block), :none (dont take any space), visibility:hidden(take space)*/
+    }
+  </style>
+</head>
+
+<body>
+  
+  <p id="page1">This element has a 2px black border and a green outline with a width of 10px.</p>
+  <hr>
+  <div>
+    <h1>text formatting</h1>
+    <p id="page2">This text is styled with some of the text formatting properties. The heading uses the text-align,
+      text-transform, and color properties.
+      The paragraph is indented, aligned, and the space between characters is specified. The underline is removed from
+      this colored
+      <a class="link1" target="_blank" href="tryit.asp?filename=trycss_text">"Try it Yourself"</a> link.</p>
+  </div>
+  <p class="page3">Cascading Style Sheets (CSS) is a style sheet language used for describing
+    the presentation of a document written in a markup language like HTML.[1] CSS is a
+    cornerstone technologyof the World Wide Web, alongside HTML and JavaScript.[2]
+    CSS is designed to enable the separation of presentation and content, including layout,
+    colors, and fonts.[3] This separation can improve content accessibility, provide more
+    flexibility and control in the specification of presentation characteristics, enable
+    multiple web pages to share formatting by specifying the relevant CSS in a separate .css
+    file, and reduce complexity and repetition in the structural content.</p>
+  <h2 style="font-size: 3vw"> heading1 (responsive text)</h2>
+  <p><b><a class="linkstyle" href="https://www.ship.com" target="_blank">Press me!</a></b></p>
+  <br>
+  <div class="different" style="overflow-x:auto;">
+    <table id="customers">
+      <tr>
+        <th>Company</th>
+        <th>Contact</th>
+        <th>Country</th>
+      </tr>
+      <tr>
+        <td>Alfreds Futterkiste</td>
+        <td>Maria Anders</td>
+        <td>Germany</td>
+      </tr>
+      <tr>
+        <td>Berglunds snabbköp</td>
+        <td>Christina Berglund</td>
+        <td>Sweden</td>
+      </tr>
+      <tr>
+        <td>Centro comercial Moctezuma</td>
+        <td>Francisco Chang</td>
+        <td>Mexico</td>
+      </tr>
+      <tr>
+        <td>Ernst Handel</td>
+        <td>Roland Mendel</td>
+        <td>Austria</td>
+      </tr>
+      <tr>
+        <td>Island Trading</td>
+        <td>Helen Bennett</td>
+        <td>UK</td>
+      </tr>
+      <tr>
+        <td>Königlich Essen</td>
+        <td>Philip Cramer</td>
+        <td>Germany</td>
+      </tr>
+      <tr>
+        <td>Laughing Bacchus Winecellars</td>
+        <td>Yoshi Tannamuri</td>
+        <td>Canada</td>
+      </tr>
+      <tr>
+        <td>Magazzini Alimentari Riuniti</td>
+        <td>Giovanni Rovelli</td>
+        <td>Italy</td>
+      </tr>
+      <tr>
+        <td>North/South</td>
+        <td>Simon Crowther</td>
+        <td>UK</td>
+      </tr>
+      <tr>
+        <td>Paris spécialités</td>
+        <td>Marie Bertrand</td>
+        <td>France</td>
+      </tr>
+    </table>
+  </div>
+  <br>
+  <div class="ex1">This div element has width: 500px;</div>
+  <br>
+
+  <div class="ex2">This div element has max-width: 500px;</div>
+
+  <p><strong>Tip:</strong> Drag the browser window to smaller than 500px wide, to see the difference between
+    the two divs!</p>
+  <br>
+  <ul>
+    <li><a href="/html/default.asp" target="_blank">HTML</a></li>
+    <li><a href="/css/default.asp" target="_blank">CSS</a></li>
+    <li><a href="/js/default.asp" target="_blank">JavaScript</a></li>
+  </ul>
+
+</body>
+
+</html>
