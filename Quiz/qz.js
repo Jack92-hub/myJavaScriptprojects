@@ -36,7 +36,7 @@ let renderQuestion = (data) => {
 
 let button = document.getElementById('button')
 button.addEventListener("click",function(){
-    console.log("working")
+    console.log("working");
 })
 
 // label.forEach(e=>e.addEventListener("click", function(){
