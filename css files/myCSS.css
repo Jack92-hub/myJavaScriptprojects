@@ -1,9 +1,0 @@
-﻿body {
-background-image:url('greenyellow.jpg');
-background-repeat:no-repeat;
-background-attachment:fixed;
-background-size:100% 100%;
-}
-h1  {
-background-color: hsl(5,150%,45%);font-size:30px; color: blue; font-family:verdana; text-align:center; 
-}
