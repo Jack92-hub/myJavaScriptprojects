@@ -1,7 +1,6 @@
 let word = document.getElementById("word")
 let input = document.getElementById("input")
 let table = document.getElementById("table")
-let cells = document.querySelectorAll("#table td")
 
 document.getElementById("button").addEventListener("click", function (){
     let number = input.value;
@@ -25,6 +24,7 @@ document.getElementById("button").addEventListener("click", function (){
         }
         table.innerHTML = info;
         word.style.visibility = "hidden";
+        let cells = document.querySelectorAll("#table td")
         cells.forEach(e => e.addEventListener("click", function(){
             let c = this.textContent;
             cells.forEach(function(x) {

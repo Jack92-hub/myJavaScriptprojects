@@ -1,17 +1,19 @@
+let historyValue = document.getElementById("history-value")
+let outputValue = document.getElementById('output-value')
 function getHistory() {
-    return document.getElementById("history-value").innerText;
+    return historyValue.innerText;
 }
 function printHistory(num) {
-    document.getElementById('history-value').innerHTML = num;
+    historyValue.innerHTML = num;
 }
 function getOutput() {
-    return document.getElementById('output-value').innerText;
+    return outputValue.innerText;
 }
 function printOutput(num) {
     if (num == "") {
-        document.getElementById('output-value').innerText = num
+        outputValue.innerText = num
     }else {
-        document.getElementById('output-value').innerHTML = getFormattedNumber(num);
+        outputValue.innerHTML = getFormattedNumber(num);
     }   
 }
 function getFormattedNumber(num) {
@@ -54,13 +56,13 @@ for (i = 0; i < operator.length; i++) {
                 output = output==""?
                 output:reverseFormatNumber(output);
                 history = history + output;
-                document.getElementById("history-value").style.fontSize = "15px"
+                historyValue.style.fontSize = "15px"
                 if (this.id == "=") {
                     if (history!=""){
                         var result = eval(history);
                         printOutput("");
                         printHistory(getFormattedNumber(result));
-                        document.getElementById("history-value").style.fontSize = "30px";
+                        historyValue.style.fontSize = "30px";
                     }
                     
                 }

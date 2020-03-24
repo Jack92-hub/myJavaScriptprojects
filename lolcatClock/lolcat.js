@@ -16,7 +16,7 @@ function time () {
     let d = new Date();
     document.getElementById("time").innerHTML = d.toLocaleTimeString() + "!";          
 }
-let time = setInterval(time);
+var time = setInterval(time);
 
 function myTimer() {
     let d = new Date();
@@ -33,7 +33,7 @@ function myTimer() {
         greet.innerHTML = "\"GOOD EVENING!\"";
     }
 }
-let myVar = setInterval(myTimer);
+var myVar = setInterval(myTimer);
 let btn = document.getElementById("button");
 let status = 1;
 btn.addEventListener("click", function () {

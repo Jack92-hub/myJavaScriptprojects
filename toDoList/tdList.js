@@ -1,6 +1,6 @@
+let input = document.getElementById("input");
 function createList() {
-    if (document.getElementById("input").value !== "") {
-        let input = document.getElementById("input");
+    if (input.value !== "") {
         let ul = document.getElementById("ul");
         let li = document.createElement("li");
         li.appendChild(document.createTextNode(input.value));
@@ -20,7 +20,7 @@ function createList() {
 }
 document.getElementById("enter").addEventListener("click", createList);
 function afterkeyPress() {
-    if (document.getElementById("input").value !== "" && event.key==='Enter') {
+    if (input.value !== "" && event.key==='Enter') {
         createList();
     }
 }
